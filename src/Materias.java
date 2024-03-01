@@ -3,18 +3,23 @@ public class Materias {
 	
 	private String codigo;
 	private String nombre;
-	private String capacidadMaxEstudiantes;
-	private String estadoApertura;
-	private String indicadorHabilitacion;
+	private int capacidadMaxEstudiantes;
+	private int estadoApertura;
+	private double indicadorHabilitacion;
 	
-	public Materias(String codigo, String nombre, String capacidadMaxEstudiantes, String estadoApertura,
-			String indicadorHabilitacion) {
+	public Materias(String codigo2, String nombre, int capacidadMaxEstudiantes, int estadoApertura,
+			double indicadorHabilitacion) {
 		super();
-		this.codigo = codigo;
+		this.codigo = codigo2;
 		this.nombre = nombre;
 		this.capacidadMaxEstudiantes = capacidadMaxEstudiantes;
 		this.estadoApertura = estadoApertura;
 		this.indicadorHabilitacion = indicadorHabilitacion;
+	}
+
+	public Materias(int codigo2, String nombre2, int capacidadMaxEstudiantes2, int estadoApertura2,
+			double indicadorHabilitacion2) {
+		
 	}
 
 	public String getCodigo() {
@@ -33,30 +38,43 @@ public class Materias {
 		this.nombre = nombre;
 	}
 
-	public String getCapacidadMaxEstudiantes() {
+	public int getCapacidadMaxEstudiantes() {
 		return capacidadMaxEstudiantes;
 	}
 
-	public void setCapacidadMaxEstudiantes(String capacidadMaxEstudiantes) {
+	public void setCapacidadMaxEstudiantes(int capacidadMaxEstudiantes) {
 		this.capacidadMaxEstudiantes = capacidadMaxEstudiantes;
 	}
 
-	public String getEstadoApertura() {
+	public int getEstadoApertura() {
 		return estadoApertura;
 	}
 
-	public void setEstadoApertura(String estadoApertura) {
+	public void setEstadoApertura(int estadoApertura) {
 		this.estadoApertura = estadoApertura;
 	}
 
-	public String getIndicadorHabilitacion() {
+	public double getIndicadorHabilitacion() {
 		return indicadorHabilitacion;
 	}
 
-	public void setIndicadorHabilitacion(String indicadorHabilitacion) {
+	public void setIndicadorHabilitacion(double indicadorHabilitacion) {
 		this.indicadorHabilitacion = indicadorHabilitacion;
 	}
 
-	
+	public void setDocenteAsignado(Docentes docente) {
+		
+		
+	}
+
+	public MateriaEstudiantes[] getCalificacionesEstudiante(Estudiante estudiante) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 }
+
+	
+	
+

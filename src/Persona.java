@@ -12,6 +12,10 @@ public class Persona {
 		this.identificacion = identificacion;
 	}
 
+	public Persona() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
